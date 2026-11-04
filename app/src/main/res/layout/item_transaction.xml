@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp"
+    android:background="@color/bg_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- ICON CIRCLE -->
+    <TextView
+        android:id="@+id/icon"
+        android:text="⬆"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/text_white"
+        android:background="@drawable/avatar_bg"
+        android:layout_marginEnd="14dp"
+        android:layout_width="44dp"
+        android:layout_height="44dp"/>
+
+    <!-- TEXT SECTION -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/transactionText"
+            android:text="Sent to Priya"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/dateText"
+            android:text="10 Apr 2024"
+            android:textSize="12sp"
+            android:textColor="@color/text_gray"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- AMOUNT -->
+    <TextView
+        android:id="@+id/amountText"
+        android:text="-₹2,000.00"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/red_debit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

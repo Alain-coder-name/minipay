@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors -->
+    <color name="teal_primary">#2E9E8F</color>
+    <color name="teal_dark">#1B7A6E</color>
+    <color name="teal_light">#4DB6A8</color>
+    <color name="text_teal_light">#B2EBE0</color>
+
+    <!-- Background Colors -->
+    <color name="bg_main">#121212</color>
+    <color name="bg_card">#1E1E1E</color>
+    <color name="bg_alternate">#121212</color>
+    <color name="bg_header">#1B3A36</color>
+
+    <!-- Text Colors -->
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_dark">#E1E1E1</color>
+    <color name="text_gray">#B0B0B0</color>
+    <color name="text_light_gray">#808080</color>
+
+    <!-- Status Colors -->
+    <color name="green_primary">#2E9E8F</color>
+    <color name="green_light">#1B3A36</color>
+    <color name="red_debit">#FF5252</color>
+    <color name="green_credit">#4CAF50</color>
+    <color name="accent">#2E9E8F</color>
+
+    <!-- UI Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_transparent">#4DFFFFFF</color>
+    <color name="divider">#333333</color>
+    <color name="dark_bg">#121212</color>
+    <color name="ripple">#1A2E9E8F</color>
+    <color name="nav_bg">#121212</color>
+    <color name="avatar_bg">#1B3A36</color>
+    <color name="teal_surface">#1B3A36</color>
+
+    <!-- Material Component Overrides -->
+    <color name="primary">#2E9E8F</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#1B3A36</color>
+    <color name="on_primary_container">#B2EBE0</color>
+    <color name="secondary">#4DB6A8</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="secondary_container">#1B3A36</color>
+    <color name="on_secondary_container">#B2EBE0</color>
+    <color name="background">#121212</color>
+    <color name="on_background">#E1E1E1</color>
+    <color name="surface">#1E1E1E</color>
+    <color name="on_surface">#E1E1E1</color>
+</resources>

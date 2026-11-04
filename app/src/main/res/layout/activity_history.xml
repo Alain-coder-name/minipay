@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main">
+
+    <!-- ===== MODERN HEADER ===== -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/header_gradient"
+        android:paddingTop="32dp"
+        android:paddingBottom="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/backBtn"
+                android:text="←"
+                android:textSize="22sp"
+                android:textColor="@color/text_white"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Transaction History"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Search and Filters -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/bg_main"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <EditText
+            android:id="@+id/searchHistory"
+            android:hint="Search transactions"
+            android:background="@drawable/input_bg"
+            android:padding="12dp"
+            android:textColor="@color/text_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <HorizontalScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/filterAll"
+                    android:text="All"
+                    android:textColor="@color/text_white"
+                    app:backgroundTint="@color/teal_primary"
+                    app:cornerRadius="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/filterSent"
+                    android:text="Sent"
+                    android:textColor="@color/teal_primary"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/filterReceived"
+                    android:text="Received"
+                    android:textColor="@color/teal_primary"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/filterRequested"
+                    android:text="Requested"
+                    android:textColor="@color/teal_primary"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <!-- ===== RECYCLER VIEW ===== -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:paddingTop="8dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

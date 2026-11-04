@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.Minipay" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/teal_primary</item>
+        <item name="colorOnPrimary">@color/text_white</item>
+        <item name="colorPrimaryContainer">@color/teal_surface</item>
+        <item name="colorOnPrimaryContainer">@color/on_primary_container</item>
+        <item name="colorSecondary">@color/teal_light</item>
+        <item name="colorOnSecondary">@color/text_white</item>
+        <item name="colorSecondaryContainer">@color/secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/on_secondary_container</item>
+        <item name="android:colorBackground">@color/bg_main</item>
+        <item name="colorOnBackground">@color/text_dark</item>
+        <item name="colorSurface">@color/bg_card</item>
+        <item name="colorOnSurface">@color/text_dark</item>
+        <item name="android:statusBarColor">@color/teal_dark</item>
+        <item name="android:navigationBarColor">@color/white</item>
+    </style>
+
+    <style name="Theme.Minipay" parent="Base.Theme.Minipay" />
+    <style name="Theme.MiniPay" parent="Base.Theme.Minipay" />
+
+    <!-- Header style -->
+    <style name="TealHeader">
+        <item name="android:background">@drawable/header_gradient</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <!-- Card style -->
+    <style name="MiniPayCard">
+        <item name="android:background">@drawable/card_bg</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+</resources>

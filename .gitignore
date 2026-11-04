@@ -1,0 +1,45 @@
+# =============================================
+# Android / Gradle — .gitignore
+# =============================================
+
+# Built output
+/build/
+app/build/
+
+# Gradle cache & wrappers (keep gradlew scripts, ignore caches)
+.gradle/
+**/gradle/wrapper/gradle-wrapper.jar
+
+# Local machine config (SDK path — differs per machine)
+local.properties
+
+# Android Studio / IntelliJ IDEA
+*.iml
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/.gitignore
+**/.idea/caches/
+**/.idea/workspace.xml
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Native build output
+.externalNativeBuild/
+.cxx/
+
+# Signing keystores (keep these out of git!)
+*.jks
+*.keystore
+
+# Captures (Android Studio profiler)
+/captures/
+
+# Log files
+*.log

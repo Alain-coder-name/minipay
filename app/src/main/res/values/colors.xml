@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- MiniPay Brand Colors -->
+    <color name="teal_primary">#2E9E8F</color>
+    <color name="teal_dark">#1B7A6E</color>
+    <color name="teal_light">#4DB6A8</color>
+    <color name="text_teal_light">#B2EBE0</color>
+    <color name="teal_surface">#E0F5F3</color>
+    <color name="teal_gradient_start">#2E9E8F</color>
+    <color name="teal_gradient_end">#1B5E55</color>
+
+    <!-- Background Colors -->
+    <color name="bg_main">#F5F7FA</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="bg_alternate">#F9FAFB</color>
+    <color name="bg_header">#2E9E8F</color>
+
+    <!-- Text Colors -->
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_dark">#1A1A2E</color>
+    <color name="text_gray">#6B7280</color>
+    <color name="text_light_gray">#9CA3AF</color>
+
+    <!-- Status Colors -->
+    <color name="green_primary">#2E9E8F</color>
+    <color name="green_light">#E0F5F3</color>
+    <color name="red_debit">#E53935</color>
+    <color name="green_credit">#2E9E8F</color>
+    <color name="accent">#2E9E8F</color>
+
+    <!-- UI Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_transparent">#4DFFFFFF</color>
+    <color name="divider">#E5E7EB</color>
+    <color name="dark_bg">#1A1A2E</color>
+    <color name="ripple">#1A2E9E8F</color>
+    <color name="nav_bg">#FFFFFF</color>
+    <color name="avatar_bg">#C8EAE7</color>
+
+    <!-- Material Component Overrides -->
+    <color name="primary">#2E9E8F</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#E0F5F3</color>
+    <color name="on_primary_container">#003731</color>
+    <color name="secondary">#4DB6A8</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="secondary_container">#C8EAE7</color>
+    <color name="on_secondary_container">#1B5E55</color>
+    <color name="background">#F5F7FA</color>
+    <color name="on_background">#1A1A2E</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="on_surface">#1A1A2E</color>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- The actual receipt view that will be converted to a Bitmap -->
+    <LinearLayout
+        android:id="@+id/receiptCard"
+        android:orientation="vertical"
+        android:background="@drawable/card_bg"
+        android:elevation="8dp"
+        android:padding="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:text="🎛️ MiniPay"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/teal_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:text="Payment Receipt"
+            android:textSize="18sp"
+            android:textColor="@color/text_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/receiptAmount"
+            android:text="₹0.00"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@color/teal_primary"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            android:layout_marginBottom="24dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:text="To / From"
+                android:textColor="@color/text_gray"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/receiptName"
+                android:text="User Name"
+                android:textColor="@color/text_dark"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:text="Date"
+                android:textColor="@color/text_gray"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/receiptDate"
+                android:text="01 Jan 2024"
+                android:textColor="@color/text_dark"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:text="Type"
+                android:textColor="@color/text_gray"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/receiptType"
+                android:text="Sent"
+                android:textColor="@color/text_dark"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="Thank you for using MiniPay!"
+            android:textSize="12sp"
+            android:textColor="@color/text_light_gray"
+            android:layout_marginTop="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/shareBtn"
+        android:text="Share Receipt"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:cornerRadius="12dp"
+        app:backgroundTint="@color/teal_primary"/>
+        
+    <TextView
+        android:id="@+id/closeBtn"
+        android:text="Close"
+        android:textColor="@color/text_gray"
+        android:padding="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
